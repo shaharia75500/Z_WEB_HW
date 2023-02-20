@@ -144,16 +144,16 @@
          <div class="container">
             <div class="sec_info">
                <h2>gallery</h2>
-               <ul>
-                  <li class="active">All</li>
-                  <li>Graphics</li>
-                  <li>Web</li>
-                  <li>Digital Marketing</li>
-                  <li>Others</li>
+               <ul id="gallery-filter-control">
+                  <li class="active" data-filter="all">All</li>
+                  <li data-filter="gd">Graphics</li>
+                  <li data-filter="web">Web</li>
+                  <li data-filter="dm">Digital Marketing</li>
+                  <li data-filter="oth">Others</li>
                </ul>
             </div>
-            <div class="row">
-               <div class="gallery_item">
+            <div class="row gallery-filter-container">
+               <div class="gallery_item filtr-item" data-category="gd">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -163,7 +163,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="web">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -173,7 +173,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="web, gd, dm">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -183,7 +183,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="dm">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -193,7 +193,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="dm">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -203,7 +203,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="dm, gd">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -213,7 +213,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="gd, oth">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -223,7 +223,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item">
+               <div class="gallery_item filtr-item" data-category="gd">
                   <img src="images/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -484,6 +484,12 @@
       <!-- Jquery Link  Start -->
       <script src="js/jquery-3.6.0.min.js"></script>
       <!-- //Jquery Link  End -->
+      <!-- Typed Js starts here -->
+      <script src="./js/typed.js"></script>
+      <!-- Typed Js ends here -->
+      <!-- Filterizr js starts here -->
+      <script src="./js/jquery.filterizr.min.js"></script>
+      <!-- Filterizr js ends here -->
       <!-- Slick JS start -->
       <script src="./js/slick.js"></script>
       <!-- Slick JS End -->
