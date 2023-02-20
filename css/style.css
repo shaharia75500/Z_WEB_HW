@@ -368,7 +368,7 @@ a {
 }
 #gallery .gallery_item {
   width: calc(25% - 30px);
-  margin: 15px;
+  padding: 15px;
   position: relative;
   transition: all 0.3s linear;
 }
